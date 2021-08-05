@@ -26,7 +26,7 @@ class MainViewModel
     fun setStateEvent(mainStateEvent: MainStateEvent, query: String) {
         viewModelScope.launch {
             when (mainStateEvent) {
-                is MainStateEvent.GetMovieEvents -> {
+                is MainStateEvent.GetProductEvents -> {
                     mainRepository.getProducts(query)
                         .onEach { dataState ->
                             _dataState.value = dataState
@@ -42,7 +42,7 @@ class MainViewModel
 }
 
 sealed class MainStateEvent {
-    object GetMovieEvents : MainStateEvent()
+    object GetProductEvents : MainStateEvent()
 
     object None : MainStateEvent()
 }

@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
 
         subscribeObserver()
-        viewModel.setStateEvent(MainStateEvent.GetMovieEvents,QUERY)
+        viewModel.setStateEvent(MainStateEvent.GetProductEvents,QUERY)
 
     }
 
