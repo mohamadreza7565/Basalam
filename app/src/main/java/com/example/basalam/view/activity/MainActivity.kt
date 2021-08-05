@@ -70,8 +70,8 @@ class MainActivity : AppCompatActivity() {
         progress_bar.visibility = if (isDisplayed) View.VISIBLE else View.GONE
     }
 
-    private fun initRv(movies: List<Product>) {
-        adapter.replace(movies)
+    private fun initRv(products: List<Product>) {
+        adapter.replace(products)
     }
 
 

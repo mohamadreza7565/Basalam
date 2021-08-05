@@ -18,7 +18,7 @@ object RoomModule {
 
     @Singleton
     @Provides
-    fun provideBlogDb(@ApplicationContext context: Context): AppDatabase {
+    fun provideProductDb(@ApplicationContext context: Context): AppDatabase {
         return Room.databaseBuilder(
             context,
             AppDatabase::class.java,
@@ -28,10 +28,9 @@ object RoomModule {
 
     @Singleton
     @Provides
-    fun provideMovieDao(blogDatabase: AppDatabase) : ProductsDao {
-        return blogDatabase.getProductsDao()
+    fun provideProductDao(appDatabase: AppDatabase): ProductsDao {
+        return appDatabase.getProductsDao()
     }
-
 
 
 }

@@ -64,8 +64,8 @@ class ProductsRvAdapter(val context: Context) :
         notifyDataSetChanged()
     }
 
-    fun addItem(movie: Product) {
-        list.add(movie)
+    fun addItem(product: Product) {
+        list.add(product)
         notifyDataSetChanged()
     }
 
