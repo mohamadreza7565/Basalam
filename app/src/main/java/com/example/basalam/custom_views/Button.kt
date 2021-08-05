@@ -6,8 +6,8 @@ import android.graphics.Typeface
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
-import com.example.basalam.data.DEFAULT_EN_FONT
 import com.example.basalam.utils.Fonts
+import com.example.basalam.utils.Fonts.Companion.DEFAULT_EN_FONT
 
 class Button : AppCompatButton {
 

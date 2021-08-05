@@ -5,7 +5,7 @@ import android.graphics.Canvas
 import android.util.AttributeSet
 import android.widget.ImageView
 
-class SquareImageView : ImageView {
+class SquareImageView : androidx.appcompat.widget.AppCompatImageView {
 
     constructor(context: Context) : super(context) {
 
