@@ -12,8 +12,8 @@ import com.example.basalam.model.Product
 import com.example.basalam.retrofit.ProductRetrofit.Companion.QUERY
 import com.example.basalam.utils.DataState
 import com.example.basalam.view.adapters.ProductsRvAdapter
-import com.example.basalam.view.view_model.MainStateEvent
-import com.example.basalam.view.view_model.MainViewModel
+import com.example.basalam.view_model.MainStateEvent
+import com.example.basalam.view_model.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 

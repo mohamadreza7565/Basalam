@@ -1,4 +1,4 @@
-package com.example.basalam.view.view_model
+package com.example.basalam.view_model
 
 
 import androidx.lifecycle.*
